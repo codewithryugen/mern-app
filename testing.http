@@ -1,0 +1,40 @@
+### REGISTER
+@contentType = application/json
+POST http://localhost:5000/api/users/
+Content-Type:{{contentType}}
+
+{
+    "name":"wokbob",
+    "email":"wokbob@mail.com",
+    "password":"1234"
+}
+
+### LOGOUT
+
+POST http://localhost:5000/api/users/logout
+Content-Type: application/json
+
+
+### LOGIN
+POST http://localhost:5000/api/users/auth
+Content-Type: application/json
+
+{
+    "email":"wokbob@mail.com",
+    "password":"1234"
+}
+
+
+
+### GET PROFILE
+GET http://localhost:5000/api/users/profile
+
+
+### UPDATE PROFILE
+@contentType = application/json
+PUT http://localhost:5000/api/users/profile
+Content-Type: {{contentType}}
+
+{
+    "name":"ryugen"
+}

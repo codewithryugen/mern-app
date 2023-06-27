@@ -1,0 +1,4 @@
+ENV=development
+SECRET_KEY=TTuuwuwuwTEKNebwurwhwbw36263
+PORT=5000
+DB=mongodb://127.0.0.1:27017
